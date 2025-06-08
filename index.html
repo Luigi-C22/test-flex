@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--  1. Flex Gap  -->
-      <style>
+  <!--     <style>
         #container {
             display: flex;
             flex-wrap: wrap;
@@ -46,10 +46,10 @@
         <div>17</div>
         <div>18</div>
         <div>19</div>
-        <div>20</div>
+        <div>20</div> -->
 
         <!-- 2. Flex Grow -->
-         <style>
+   <!--       <style>
           #main {
               display: flex;
               width: 600px;
@@ -72,6 +72,45 @@
           #main div:nth-of-type(5) {
               flex-grow: 1;
           }
+          
          </style>
+          <h2>Flex Grow:</h2>
+          <div id=main>
+            <div style="background-color: coral;"></div>
+            <div style="background-color: darkcyan;"></div>
+            <div style="background-color: khaki;"></div>
+            <div style="background-color: darkorchid;"></div>
+            <div style="background-color: lightgrey;"></div>
+          </div>
+ -->
+
+          <!-- Flex Shrink -->
+           <style>
+            #main {
+              width: 350px;
+              height: 100px;
+              border: solid 1px black;
+              display: flex;
+            }
+            #main div {
+              flex-grow: 1;
+              flex-shrink: 1;
+              flex-basis: 100px; /* Imposta la dimensione di base per gli elementi flessibili */          
+              }
+            #main div:nth-of-type(2) {
+              flex-shrink: 1; 
+            }
+           
+           </style>
+           <h2>Flex Shrink</h2>
+            <div id="main">
+              <div style="background-color: coral;"></div>
+              <div style="background-color: darkcyan;"></div>
+              <div style="background-color: khaki;"></div>
+              <div style="background-color: darkorchid;"></div>
+              <div style="background-color: lightgrey;"></div>
+            </div>
+
+          <!-- Flex Basis -->
 </body>
 </html>
