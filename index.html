@@ -85,7 +85,7 @@
  -->
 
           <!-- Flex Shrink -->
-           <style>
+           <!-- <style>
             #main {
               width: 350px;
               height: 100px;
@@ -94,7 +94,7 @@
             }
             #main div {
               flex-grow: 1;
-              flex-shrink: 1;
+              flex-shrink: 2;
               flex-basis: 100px; /* Imposta la dimensione di base per gli elementi flessibili */          
               }
             #main div:nth-of-type(2) {
@@ -109,8 +109,33 @@
               <div style="background-color: khaki;"></div>
               <div style="background-color: darkorchid;"></div>
               <div style="background-color: lightgrey;"></div>
-            </div>
+            </div> -->
 
           <!-- Flex Basis -->
+           <style>
+            #main {
+              width: 300px;
+              height: 100px;
+              border: solid 1px black;
+              display: flex;
+            }
+            #main div {
+              flex-grow: 0;
+              flex-shrink: 0;
+              flex-basis: 80px;           
+              }
+            #main div:nth-of-type(2) {
+              flex-basis: 80px; 
+            }
+           
+           </style>
+           <h2>Flex Basis</h2>
+            <div id="main">
+              <div style="background-color: coral;"></div>
+              <div style="background-color: darkcyan;"></div>
+              <div style="background-color: khaki;"></div>
+              <div style="background-color: darkorchid;"></div>
+              <div style="background-color: lightgrey;"></div>
+            </div>
 </body>
 </html>
